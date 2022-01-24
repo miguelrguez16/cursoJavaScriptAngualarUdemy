@@ -79,30 +79,61 @@
 
     <h2>Imagenes en html</h2>
 
-    <img src="\Imagenes\imagenGatito.jpg" alt="Imagen de un perrito" title="Foto de un perro" width="300px "/>
+    <img
+      src="\Imagenes\imagenGatito.jpg"
+      alt="Imagen de un gatito cuquito"
+      title="Foto de un gato"
+      width="300px "
+    />
     <!--alt en caso de que no cargue la imagen inmsertar texto descriptivo-->
     <!-- title: al posicionarse con el cursor sacará el titulo -->
 
-    <h2> Tablas en html</h2>
+    <h2>Tablas en html</h2>
     <!-- Organizacion de contenido-->
     <table border="1">
       <tr>
-        <th>Nombre </th>      <!-- th resalata nombre: (encabezados)-->
-        <td>correo </td>
-        <td> otro dato</td>
-    </tr><!-- representa una fila (tr) una columna (td)-->
-    <tr>
-      <td>Miguel </td>        
-      <td colspan="2">miguelucu@correo.com </td> <!-- expande hacia izq el n colum requeridas-->
-
-  </tr>
-  <tr>
-    <td>Samuel </td>        
-    <td>samu@correo.com </td> <!-- expande hacia izq el n colum requeridas-->
-    <td>sama</td>
-
-</tr>
+        <th>Nombre</th>
+        <!-- th resalata nombre: (encabezados)-->
+        <td>correo</td>
+        <td>otro dato</td>
+      </tr>
+      <!-- representa una fila (tr) una columna (td)-->
+      <tr>
+        <td>Miguel</td>
+        <td colspan="2">miguelucu@correo.com</td>
+        <!-- expande hacia izq el n colum requeridas-->
+      </tr>
+      <tr>
+        <td>Samuel</td>
+        <td>samu@correo.com</td>
+        <!-- expande hacia izq el n colum requeridas-->
+        <td>sama</td>
+      </tr>
     </table>
+
+    <h2>FORMULARIOOOOOS</h2>
+    <form> <!--uso del action y method-->
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="tu nombre" />
+      </p>
+      <p>
+        <label for="descripcion"></label>
+        <textarea name="descripcion"></textarea>
+      </p>
+
+      <!--Conjunto de radio buttons-->
+      <input type="radio" name="genero" value="hombre"> Hombre <br/>
+      <input type="radio" name="genero" value="mujer"> Mujer <br/>
+      <input type="radio" name="genero" value="Nobinario"> No Binario <br/>
+      <!--campo unico de seleccion-->
+      <select>
+        <option value="hombre">hombre </option>
+        <option value="mujer">mujer</option>
+        <option value="Nobinario">No Binario</option>
+      </select>
+      <input type="submit" value="Enviar Formulario"/>
+    </form>
   </body>
   <aside></aside>
   <footer></footer>

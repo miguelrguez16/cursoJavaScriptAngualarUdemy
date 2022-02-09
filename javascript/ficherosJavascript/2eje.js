@@ -10,7 +10,7 @@ var sum = 0;
 var cont = 0;
 
 do {
-    //O=JO CUIDAO CON EL PUTO PARSEINT si no se mete la liase
+    //O=JO CUIDAO CON EL PUTO PARSEINT si no se mete la linea esa
   var num = parseInt(prompt("introduce numero hasta negativo", -1));
     console.log("Numero Introducid: " + num);
   if (isNaN(num)) {
@@ -24,5 +24,6 @@ do {
   }
 } while (num > 0);
 
+
 var media = sum/cont;
-alert("Media: " + media);
+alert("La media de todos los numeros es: " + media);

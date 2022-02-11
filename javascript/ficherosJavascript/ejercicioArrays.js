@@ -11,8 +11,7 @@
  */
 
 var numImput = 0;
-var cont = 0;
-var vector=[];
+var vector = new Array(6);
 
 function documenta(titulo, vector) {
   document.write(`<h2>${titulo}</h2>`);
@@ -23,11 +22,10 @@ function documenta(titulo, vector) {
   document.write("</lu>");
 }
 
-while (cont < 6) {
+while (vector.length < 6) {
   numImput = parseFloat(prompt("Introduce valor numérico: "));
   if (!isNaN(numImput)) {
     vector.push(numImput);
-    cont++;
   }
 }
 // ? 1.Mostar vector, documento y consola
@@ -40,18 +38,19 @@ documenta(
   vector.sort((a, b) => a - b)
 );
 // ? VECTOR AL REVES
-documenta(
-  "Vector al reves",
-  vector.sort((a, b) => b - a)
-);
+documenta("Vector al reves", vector.reverse());
 console.log();
 // ? Número de elementos
 document.write(`<h2>Longitud ${vector.length}</h2>`);
 
 // ? Encontrar posicion numero
-var posicionNumeroBusqueda = vector.indexOf(parseFloat(prompt("Número a buscar: ")));
-if(posicionNumeroBusqueda==-1){
-    document.write("<p>Número:  no encontrado</p>")
-}else {
-    document.write(`<p>Número encontrado, posicion ${posicionNumeroBusqueda}</p>`);
+var posicionNumeroBusqueda = vector.indexOf(
+  parseFloat(prompt("Número a buscar: "))
+);
+if (posicionNumeroBusqueda == -1) {
+  document.write("<p>Número:  no encontrado</p>");
+} else {
+  document.write(
+    `<p>Número encontrado, posicion ${posicionNumeroBusqueda}</p>`
+  );
 }

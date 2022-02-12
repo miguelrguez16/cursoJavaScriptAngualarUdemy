@@ -27,8 +27,6 @@ console.log(todosLosDiv);
 todosLosDiv[2].innerHTML = "Segundo DIV modificado";
 todosLosDiv[2].style.background = "green";
 
-
-
 //todosLosDiv.forEach((elemento,indice) => { // No vale para un HTML colletcion
 for (var valor in todosLosDiv) {
   if (typeof todosLosDiv[valor].textContent == "string") {
@@ -51,3 +49,26 @@ seccion.prepend(hr);
  * se peude meter despues con un prepend
  */
 // ! SEleccionamos elementos por clase
+var divsRojo = document.getElementsByClassName("rojo");
+console.log("Ancho divsRojo:" + divsRojo.length);
+
+//console.log("Inicio bucle");
+//console.time("bucle");
+for (var i = 0; i<divsRojo.length; i++ ) {
+    divsRojo[i].style.background = "red";
+    divsRojo[i].style.color = "white";
+}
+//console.timeEnd("bucle");
+
+var divsAmarillo = document.getElementsByClassName("amarillo");
+console.log("Ancho divsAmarillo: " + divsAmarillo.length);
+
+
+// ! QUERY SELECTOR
+var id = document.querySelector("#curso");
+console.log("Id=Curso " + id);
+console.log(id);
+
+var claseRojo = document.querySelectorAll("div.rojo");
+console.log("div.rojo " + claseRojo);
+console.log(claseRojo);

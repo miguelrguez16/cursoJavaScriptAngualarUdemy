@@ -18,7 +18,8 @@ window.addEventListener("load", () => {
 
     if (nombre == null || nombre.length == 0) {
       alert("Nombre no es valido");
-      document.querySelector("#error_nombre").innerHTML="Error formato nombre";
+      var marcarError = document.querySelector("#error_nombre");
+      marcarError.innerHTML="Error formato nombre";
       return false;
     }else{
         document.querySelector("#error_nombre").style.display = "none";

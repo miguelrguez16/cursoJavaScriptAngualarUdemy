@@ -16,8 +16,6 @@ for(var i in localStorage){
     }
 }
 
-
-
 var formularioBorrado = document.querySelector("#formularioBorrar");
 formularioBorrado.addEventListener("submit", () => {
   var titulo = document.querySelector("#removePelicula").value;

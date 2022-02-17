@@ -57,8 +57,6 @@ $(document).ready(() => {
 
   //var search = $("#caja").find(".resaltado");
   //var search = $("#caja .resaltado").eq(0).parent().parent().find('[title="Google"]');
-
-
   var search = $("#element2").parent().parent().find('.resaltado');
   console.log("search");
   console.log(search);

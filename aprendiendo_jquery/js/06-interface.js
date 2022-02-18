@@ -67,5 +67,5 @@ $(document).ready(function () {
 
 
   // ! TABS PESTAÑITAS
-  
+  $("#pestanas").tabs();
 });

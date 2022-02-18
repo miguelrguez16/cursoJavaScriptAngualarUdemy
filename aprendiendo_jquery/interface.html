@@ -6,11 +6,42 @@
 
     <style>
       * {
-        background-color: antiquewhite;
+        background-color: white;
+      }
+      .elemento {
+        width: 300px;
+        height: 200px;
+        border: 4px solid black;
+        background-color: aquamarine;
+        margin: 20px;
+        float: left;
+      }
+      .lista_seleccionable li {
+        width: 80%;
+        padding: 20 px;
+        border: 1px solid #ccc;
+        list-style: none;
+        cursor: pointer;
+        text-align: center;
+      }
+      ul .ui-selecting {
+        background: rgb(128, 128, 128);
+      }
+      ul .ui-selected {
+        background: rgb(5, 255, 159);
+      }
+      #save {
+        float: initial;
       }
     </style>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="js/06-interface.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.1\jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="jquery-ui-1.13.1\jquery-ui.structure.min.css"
+    />
+    <link rel="stylesheet" href="jquery-ui-1.13.1\jquery-ui.theme.min.css" />
     <script
       type="text/javascript"
       src="jquery-ui-1.13.1/jquery-ui.min.js"
@@ -18,5 +49,23 @@
   </head>
   <body>
     <h1>JQUERY UI</h1>
+
+    <ul class="lista_seleccionable">
+      <li>El Señor de los anillos</li>
+      <li>El legado de tormentas</li>
+      <li>Fundacion e imperio</li>
+      <li>En las montañas de la locura</li>
+      <li>El nombre del viento</li>
+      <li>The Doors of Storne</li>
+    </ul>
+    <button id="save" value="Guardar">Guardar</button>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="elemento">Elemento 1 de la web</div>
+    <div class="elemento">Elemento 2 de la web</div>
+    <div class="elemento">Elemento 3 de la web</div>
   </body>
 </html>

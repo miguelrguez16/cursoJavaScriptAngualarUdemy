@@ -7,11 +7,26 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
     <!-- RECURSOS SLIDER-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+    <!--MOMENT JS LOCALIZACION ES FECHA-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"
+      integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- MAIN JAVASCRIPT-->
     <script type="text/javascript" src="js/main.js"></script>
   </head>
@@ -34,58 +49,15 @@
       <!-- SLIDER -->
       <div id="slider">
         <div class="bxslider">
-            <div><img src="img/hojas.jpg" title="Hojas"></div>
-            <div><img src="img/cielo.jpg" title="Cielito"></div>
-            <div><img src="img/rojo.jpg" title="Rojo"></div>
-          </div>
+          <div><img src="img/hojas.jpg" title="Hojas" /></div>
+          <div><img src="img/cielo.jpg" title="Cielito" /></div>
+          <div><img src="img/rojo.jpg" title="Rojo" /></div>
+        </div>
       </div>
       <!-- CONTENIDO -->
       <section id="content">
         <div id="posts">
-          <article class="post">
-            <h2>Titulo del Artículo</h2>
-            <span class="date">Fecha publicación articulo</span>
-            <p>
-              El Samsung Galaxy S22 Ultra supone uno de los movimientos más
-              importantes de la compañía en los últimos años. Muere el Galaxy
-              Note, en pos de un modelo Ultra que hereda tanto su diseño como el
-              aspecto más diferencial de esta familia, el S-Pen. Los modelos de
-              diseño redondeado, los Galaxy S22 y S22+, quedan lejos del
-              apellido Ultra (aunque no tan lejos en especificaciones), pero si
-              queremos el Samsung con mejor hardware, tenemos que olvidarnos del
-              diseño anterior. Pero no solo de diseño vive un teléfono. El
-              Samsung Galaxy S22 Ultra es un puñetazo en la mesa a nivel de
-              hardware. Tiene la pantalla más luminosa del mercado, un
-              procesador Exynos con una GPU de AMD, sensor de cámara más
-              luminoso y alguna que otra sorpresa en fotografía que no se
-              refleja en la hoja técnica, pero está presente. Analizamos a fondo
-              el Galaxy S22 Ultra, candidato a rey de la gama alta en este 2022
-            </p>
-
-            <a href="" class="button-more">Leer más...</a>
-          </article>
-          <article class="post">
-            <h2>Otro Titulo del Artículo</h2>
-            <span class="date">Fecha publicación articulo</span>
-            <p>
-              El Samsung Galaxy S22 Ultra supone uno de los movimientos más
-              importantes de la compañía en los últimos años. Muere el Galaxy
-              Note, en pos de un modelo Ultra que hereda tanto su diseño como el
-              aspecto más diferencial de esta familia, el S-Pen. Los modelos de
-              diseño redondeado, los Galaxy S22 y S22+, quedan lejos del
-              apellido Ultra (aunque no tan lejos en especificaciones), pero si
-              queremos el Samsung con mejor hardware, tenemos que olvidarnos del
-              diseño anterior. Pero no solo de diseño vive un teléfono. El
-              Samsung Galaxy S22 Ultra es un puñetazo en la mesa a nivel de
-              hardware. Tiene la pantalla más luminosa del mercado, un
-              procesador Exynos con una GPU de AMD, sensor de cámara más
-              luminoso y alguna que otra sorpresa en fotografía que no se
-              refleja en la hoja técnica, pero está presente. Analizamos a fondo
-              el Galaxy S22 Ultra, candidato a rey de la gama alta en este 2022
-            </p>
-
-            <a href="" class="button-more">Leer más...</a>
-          </article>
+          <!-- POSTS CARGADOS DESDE JSON-->
         </div>
         <aside id="sidebar">
           <div id="about">

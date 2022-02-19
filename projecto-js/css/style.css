@@ -7,10 +7,7 @@
   float: none;
   clear: both;
 }
-body {
-  background: url("../img/hojas.jpg");
-  background-attachment: fixed; /* para que ocupe todo*/
-}
+
 #global {
   width: 65%;
   margin: 0px auto;
@@ -26,7 +23,6 @@ body {
   font-size: 34px;
   letter-spacing: 3px;
   line-height: 75px;
-  background-color: rgb(104, 23, 151);
   color: #fff;
   text-align: center;
   width: 500px;
@@ -51,9 +47,7 @@ body {
   transition: all 300ms;
 }
 /*para cuando pasemos por enciam del menu*/
-#menu ul li:hover {
-  background: rgb(104, 23, 151);
-}
+
 #menu a {
   display: block;
   color: white;
@@ -90,7 +84,6 @@ body {
   text-align: center;
   display: block;
   padding: 15px;
-  background-color: rgb(104, 23, 151);
   color: white;
   text-decoration: none;
   margin-top: 10px;
@@ -132,30 +125,60 @@ form input[type="email"] {
   box-shadow: 0px 0px 2px gray;
   margin-top: 5px;
 }
-form input[type="submit"]{
-    background-color: #ccc;
-    padding: 10px;
-    border: 1px solid gray;
-    color: #333;
-    cursor: pointer;
+form input[type="submit"] {
+  background-color: #ccc;
+  padding: 10px;
+  border: 1px solid gray;
+  color: #333;
+  cursor: pointer;
 }
-footer{
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    height: 47px;
-    background-color: rgba(51, 51, 51, 0.70);
-    margin: 0px auto;
-    width: 65%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
-    line-height: 42px;
-    text-align: center;
-
+footer {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  height: 47px;
+  background-color: rgba(51, 51, 51, 0.7);
+  margin: 0px auto;
+  width: 65%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  line-height: 42px;
+  text-align: center;
 }
 /* Clases que representan las cajas del slider*/
-.bx-wrapper, .bx-viewport{
-    height: 250px !important;
+.bx-wrapper,
+.bx-viewport {
+  height: 250px !important;
 }
 
+#selector-theme {
+  position: fixed;
+  top: 40%;
+  background: rgba(51, 51, 51, 0.7);
+  width: 50px;
+  height: 100px;
+}
+#to-purple,
+#to-blue,
+#to-red {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  display: block;
+  margin: 0px auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#to-purple{
+  background: rgb(104, 23, 151);
+}
+
+#to-blue{
+  background: #1f87c4;
+}
+
+#to-red {
+  background:#ca3413;
+}

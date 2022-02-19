@@ -37,7 +37,8 @@ $(document).ready(function () {
         "El Samsung Galaxy S22 Ultra supone uno de los movimientos mas importantes de la compañía en los últimos años. Muere el Galaxy Note, en pos de un modelo Ultra que hereda tanto su diseño como el aspecto más diferencial de esta familia, el S-Pen.",
     },
   ];
-  console.table(posts);
+  //console.table(posts);
+
   posts.forEach((item, index) => {
     var post = `<article class="post">
             <h2>${item.title}</h2>
@@ -47,7 +48,20 @@ $(document).ready(function () {
             </p>
             <a href="" class="button-more">Leer más...</a>
           </article>`;
-          console.log(post);
+    // console.log(post);
     $("#posts").append(post);
+  });
+
+  // * ID del enlace al css
+  var theme = $("#theme");
+
+  $("#to-purple").click(function () {
+    theme.attr("href", "css/purple.css");
+  });
+  $("#to-red").click(function () {
+    theme.attr("href", "css/red.css");
+  });
+  $("#to-blue").click(function () {
+    theme.attr("href", "css/blue.css");
   });
 });

@@ -2,6 +2,8 @@
 $(document).ready(function () {
   //console.log("cargado");
 
+  // * ID del enlace al css
+
   // ! SLIDER
   $(".bxslider").bxSlider({
     mode: "fade",
@@ -51,17 +53,56 @@ $(document).ready(function () {
     // console.log(post);
     $("#posts").append(post);
   });
-
-  // * ID del enlace al css
   var theme = $("#theme");
-
   $("#to-purple").click(function () {
     theme.attr("href", "css/purple.css");
+    localStorage.setItem("colorTheme", "purple");
   });
   $("#to-red").click(function () {
     theme.attr("href", "css/red.css");
+    localStorage.setItem("colorTheme", "red");
   });
   $("#to-blue").click(function () {
     theme.attr("href", "css/blue.css");
+    localStorage.setItem("colorTheme", "blue");
   });
+  $("#to-aehstetic").click(function () {
+    theme.attr("href", "css/aesthetic.css");
+    localStorage.setItem("colorTheme", "aehstetic");
+  });
+
+  // * Scroll para arriba
+  $(".subir").click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+  });
+
+  $("#login form").submit(function () {
+    //se.preventDefault();
+    localStorage.setItem("form-name", $("#form-name").val());
+  });
+  var form_name = localStorage.getItem("form-name");
+
+  if (form_name != null && form_name!=undefined) {
+    $("#about p").html("Bienvenido, <strong>" + form_name + "<strong>");
+    $("#login").hide();
+    $("#about").append('<button id="btnsalir" class="button-more" value="salir">Salir</a>');
+  }
+
+  $("#btnsalir").click(function (e) { 
+    e.preventDefault();
+    localStorage.removeItem("form-name");
+    $("#about p").html("Era tarde tonta y caliente De esa queman el sol la frente era  verano del 87 y yo me moria por verte");
+    $("#login").show();
+    $("#btnsalir").remove();
+    location.reload();
+  });
+
 });
+
+

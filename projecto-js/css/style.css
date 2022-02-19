@@ -157,11 +157,11 @@ footer {
   top: 40%;
   background: rgba(51, 51, 51, 0.7);
   width: 50px;
-  height: 100px;
+  height: 134px;
 }
 #to-purple,
 #to-blue,
-#to-red {
+#to-red,#to-aehstetic {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -181,4 +181,15 @@ footer {
 
 #to-red {
   background:#ca3413;
+}
+#to-aehstetic{
+  background: #82916A;
+}
+
+
+.subir{
+  color: white;
+  text-decoration: none;
+  display: block;
+  float: right;
 }

@@ -7,13 +7,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link id="theme" href="css/purple.css" rel="stylesheet" type="text/css" />
 
-    <!-- RECURSOS SLIDER-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-    />
+    <!-- Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <!--MOMENT JS LOCALIZACION ES FECHA-->
     <script
@@ -28,6 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <!-- MAIN JAVASCRIPT-->
     <script type="text/javascript" src="js/main.js"></script>
 
@@ -45,7 +41,7 @@
         case "blue":
           theme.attr("href", "css/blue.css");
           break;
-          case "aesthetic":
+        case "aesthetic":
           theme.attr("href", "css/aesthetic.css");
           break;
         default:
@@ -75,18 +71,13 @@
         </nav>
       </header>
 
-      <!-- SLIDER -->
-      <div id="slider">
-        <div class="bxslider">
-          <div><img src="img/hojas.jpg" title="Hojas" /></div>
-          <div><img src="img/cielo.jpg" title="Cielito" /></div>
-          <div><img src="img/rojo.jpg" title="Rojo" /></div>
-        </div>
-      </div>
       <!-- CONTENIDO -->
       <section id="content">
-        <div id="posts">
-          <!-- POSTS CARGADOS DESDE JSON-->
+        <div id="box">
+            <!-- CARGAR RELOJ-->
+            <div id="reloj">
+                
+            </div>
         </div>
         <aside id="sidebar">
           <div id="about">
@@ -101,7 +92,7 @@
             <form>
               <h4><span>Identifícate</span></h4>
               <label for="name">Nombre:</label><br />
-              <input type="text" name="name" id="form-name"/><br />
+              <input type="text" name="name" id="form-name" /><br />
               <label for="correo">Correo:</label><br />
               <input type="email" name="correo" />
               <label for="password">Contraseña:</label><br />
@@ -113,9 +104,10 @@
         <div class="clearfix"></div>
       </section>
     </section>
-    <footer>Master en JavaScript: Miguel Rodríguez González &copy;
+    <footer>
+      Master en JavaScript: Miguel Rodríguez González &copy;
 
-        <a href="#" class="subir">Subir</a>
+      <a href="#" class="subir">Subir</a>
     </footer>
   </body>
 </html>

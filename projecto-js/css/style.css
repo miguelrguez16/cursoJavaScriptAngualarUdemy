@@ -117,7 +117,9 @@ h2 {
 }
 form input[type="text"],
 form input[type="password"],
-form input[type="email"] {
+form input[type="email"],
+form input[type="number"],
+select {
   padding: 5px;
   border-radius: 2px;
   border: 1px solid #ccc;
@@ -162,7 +164,8 @@ footer {
 }
 #to-purple,
 #to-blue,
-#to-red,#to-aehstetic {
+#to-red,
+#to-aehstetic {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -172,45 +175,53 @@ footer {
   margin-bottom: 5px;
   cursor: pointer;
 }
-#to-purple{
+#to-purple {
   background: rgb(104, 23, 151);
 }
 
-#to-blue{
+#to-blue {
   background: #1f87c4;
 }
 
 #to-red {
-  background:#ca3413;
+  background: #ca3413;
 }
-#to-aehstetic{
-  background: #82916A;
+#to-aehstetic {
+  background: #82916a;
 }
 
-
-.subir{
+.subir {
   color: white;
   text-decoration: none;
   display: block;
   float: right;
 }
 
-
-#box{
+#box {
   width: 60%;
   float: left;
   margin-top: 40px;
 }
-#acordeon{
+#acordeon {
   margin-top: 20px;
 }
 
-
-#reloj{
+#reloj {
   font-size: 30px;
   font-family: monospace;
   font-weight: bold;
   width: 30%;
   padding: 30px;
   margin: 0% auto;
+}
+
+#contact {
+  width: 50%;
+  margin-top: 15px;
+  font-family: Helvetica, Arial;
+}
+#contact label {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
 }

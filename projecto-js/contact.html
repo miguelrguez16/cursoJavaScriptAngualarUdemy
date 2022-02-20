@@ -8,21 +8,12 @@
     <link id="theme" href="css/purple.css" rel="stylesheet" type="text/css" />
 
     <!-- Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!--MOMENT JS LOCALIZACION ES FECHA-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"
-      integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.13.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.13.1/jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.13.1/jquery-ui.theme.min.css"/>
+    <script  type="text/javascript" src="js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
 
     <!-- MAIN JAVASCRIPT-->
     <script type="text/javascript" src="js/main.js"></script>
@@ -67,7 +58,6 @@
             <li><a href="reloj.html">RELOJ</a></li>
             <li><a href="aboutme.html">SOBRE MI</a></li>
             <li><a href="contact.html">CONTACTO</a></li>
-
           </ul>
         </nav>
       </header>
@@ -75,10 +65,26 @@
       <!-- CONTENIDO -->
       <section id="content">
         <div id="box">
-            <!-- CARGAR RELOJ-->
-            <div id="reloj">
+            <form id="contact" method="POST" action="">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" />
+                <label for="surname" >Apellidos:</label>
+                <input type="text" name="surname" />
+                <label for="email">Email:</label>
+                <input type="email" name="email" />
+                <label for="sex">Sexo:</label>
+                <select name="sex">
+                    <option value="men">Hombre</option>
+                    <option value="women">Mujer</option>
+                    <option value="nobinario">No binario</option>
+                </select>
+                <label for="date">Fecha Nacimiento:</label>
+                <input type="text" name="date" />
+                <label for="years">Edad:</label>
+                <input type="number" name="years" />
+                <input type="submit" name="years" />
 
-            </div>
+            </form>
         </div>
         <aside id="sidebar">
           <div id="about">

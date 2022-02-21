@@ -1,0 +1,2 @@
+tsc nombrearchivo.ts
+tsc -w *.ts //-> ejecuta to

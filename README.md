@@ -8,3 +8,4 @@
 * [JQUERY](https://jquery.com/)
 * [JQUERY UI](https://jqueryui.com/)
 * [MOMENT JS] (https://momentjs.com/)
+* [TypeScript] (https://www.typescriptlang.org/)

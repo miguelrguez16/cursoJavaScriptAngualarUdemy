@@ -23,10 +23,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <!-- MAIN JAVASCRIPT-->
-    <script type="text/javascript" src="js/main.js"></script>
-
     <!-- MANTENER COLOR-->
     <script>
       var theme = $("#theme");
@@ -34,20 +30,27 @@
       switch (actualcolor) {
         case "purple":
           theme.attr("href", "css/purple.css");
+          localStorage.setItem("colorTheme", "purple");
           break;
         case "red":
           theme.attr("href", "css/red.css");
+          localStorage.setItem("colorTheme", "red");
           break;
         case "blue":
           theme.attr("href", "css/blue.css");
+          localStorage.setItem("colorTheme", "blue");
           break;
-        case "aesthetic":
+          case "aesthetic":
           theme.attr("href", "css/aesthetic.css");
+          localStorage.setItem("colorTheme", "aesthetic");
           break;
         default:
+          console.error("Error eleccion theme");
           break;
       }
     </script>
+    <!-- MAIN JAVASCRIPT-->
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <div id="selector-theme">
@@ -67,7 +70,6 @@
             <li><a href="reloj.html">RELOJ</a></li>
             <li><a href="aboutme.html">SOBRE MI</a></li>
             <li><a href="contact.html">CONTACTO</a></li>
-
           </ul>
         </nav>
       </header>
@@ -75,10 +77,8 @@
       <!-- CONTENIDO -->
       <section id="content">
         <div id="box">
-            <!-- CARGAR RELOJ-->
-            <div id="reloj">
-
-            </div>
+          <!-- CARGAR RELOJ-->
+          <div id="reloj"></div>
         </div>
         <aside id="sidebar">
           <div id="about">

@@ -129,7 +129,8 @@ select {
   margin-top: 5px;
 }
 form input[type="submit"] {
-  background-color: #ccc;
+  display: block;
+  background: #ccc;
   padding: 10px;
   border: 1px solid gray;
   color: #333;
@@ -207,11 +208,11 @@ footer {
 }
 
 #reloj {
-  font-size: 30px;
+  font-size: 35px;
   font-family: monospace;
   font-weight: bold;
   width: 30%;
-  padding: 30px;
+  padding: 25px;
   margin: 0% auto;
 }
 
@@ -224,4 +225,12 @@ footer {
   display: block;
   width: 100%;
   margin-top: 5px;
+}
+.form-error{
+  float: right;
+  font-size: monospace;
+  background: white;
+  color: red;
+  padding: 7px;
+  width: 65%;
 }

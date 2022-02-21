@@ -72,7 +72,7 @@ $(document).ready(function () {
   });
   $("#to-aehstetic").click(function () {
     theme.attr("href", "css/aesthetic.css");
-    localStorage.setItem("colorTheme", "aehstetic");
+    localStorage.setItem("colorTheme", "aesthetic");
   });
 
   // * Scroll para arriba
@@ -120,8 +120,26 @@ $(document).ready(function () {
   if (window.location.href.indexOf("reloj") > -1) {
     // ! estoy en esta pagina
     setInterval(function () {
-      var reloj = moment().format("hh:mm:ss");
+      var reloj = moment().format("hh:mm:ss a");
       $("#reloj").html(reloj);
     }, 1000);
+  }
+
+  if (window.location.href.indexOf("contact") > -1) {
+    $("#date").datepicker({
+      showAnim: "fold",
+      yearRange: "1930:2015",
+      dateFormat: "dd-mm-yy",
+    });
+
+    // ! validacion
+    $.validate({
+      
+    });
+
+    $("#contact").submit(function (e) { 
+      e.preventDefault();
+      alert("Datos enviados");
+    });
   }
 });

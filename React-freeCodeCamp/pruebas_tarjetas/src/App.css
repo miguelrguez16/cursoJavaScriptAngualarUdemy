@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100vh;
+  overflow: auto;
+  flex-direction: row;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}

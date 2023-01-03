@@ -17,3 +17,8 @@ npx create-react-app <nombre_app>
 ![visual_studio](https://badges.aleen42.com/src/visual_studio.svg)
 
 [Mas Badgets](https://raw.githubusercontent.com/aleen42/badges/master/README.md)
+
+## Librerias
+
+- [React-icons](https://react-icons.github.io/react-icons/)
+- [MATHJS](https://mathjs.org/)
